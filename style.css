@@ -40,10 +40,6 @@ div.imgmiddle {
     src: url(fonts/Alti-Regular.woff) format('woff');
 }
 
-@font-face {
-    font-family: 'Sabon';
-    src: url(fonts/Sabon.woff);
-}
 
 @font-face {
     font-family: 'Excelsior';
@@ -76,8 +72,8 @@ div.largetext {
 }
 
 div.mediumtext {
-    font-size:34px;
-    line-height:38px;
+    font-size:36px;
+    line-height:42px;
 }
 
 
@@ -96,8 +92,8 @@ div.smalltext2 {
 }
 
 div.extrasmalltext {
-    font-size:14px;
-    line-height:16px;
+    font-size:18px;
+    line-height:21px;
     font-family: 'DecimaMono';
 }
 
@@ -197,6 +193,10 @@ div.mtsmall {
     margin-top:20px;
 }
 
+div.mtmed {
+    margin-top:80px;
+}
+
 div.mtlarge {
     margin-top: 50vh;
 }
@@ -255,6 +255,10 @@ div.padtop{
     padding-top: 50vh;
 }
 
+div.padtopauto{
+    padding-top:auto;
+}
+
 div.padleft
 
 /* Widths */
@@ -277,7 +281,6 @@ div.width33 {
 
 div.width25 {
     width:25%;
-    border:1px solid red;
 }
 
 
@@ -336,7 +339,23 @@ div.caption {
     font-size: 30px;
 }
 
+div.imgcaption {
+    padding-top: 18px;
+    padding-bottom: 66px;
+    font-size:18px;
+    font-family: 'ExcelsiorItalic'
+}
+
   div.zeroleft {
+    width: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 100vh;
+  }
+
+  div.zeroleftscroll {
     width: 50%;
     padding: 80px;
     box-sizing: border-box;
@@ -398,6 +417,47 @@ div.caption {
     display: block;
     height: 100vh;
 }
+
+.glow-image {
+    display: block;
+    width: auto; 
+    height: auto;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 50%;      
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6); 
+    animation: pulse 6s infinite;
+  }
+
+  .invert-image {
+    filter: invert(1);
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 40px rgb(255, 255, 255);
+    }
+  }
+
+  .image-fade-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .fade-img {
+    position: relative;
+    display: none; /* Hidden by default */
+  }
+  
+  .fade-img.show {
+    display: block; /* Only the active image is shown */
+  }
+
+
 
 /*Page Numbers*/
 
@@ -481,46 +541,20 @@ div.herovideo video {
   .moving-element {
     position: fixed;
     top: 0;
-    left:-20px;
-    height: 100vh;
-    transform: translateX(100vw);
-    transition: transform 2s ease;
-    z-index: 1001;
-    /* display: none; */
+    left: -36px;
+    width:36px;
+    height: 200vh;
+    pointer-events: none;
+    z-index: 800;
+    transform: translateX(0);
+    transition: transform 8s ease;
+    overflow: hidden;
+    margin-bottom: auto;
   }
-
-  /* .moving-element.visible {
+  
+  .moving-element img {
     display: block;
-  } */
-
-
-  /* animation: moveLeft 5s linear forwards; */
-
-  
-  /* @keyframes moveLeft {
-    from {
-      right: -2px;
-    }
-    to {
-      right: 100vw;
-    }
-  } */
-
-
-  /* .moving-element {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100vh;
-    animation: moveRight 3s linear forwards;
-    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  
-  @keyframes moveRight {
-    from {
-      left: -2px; /* start just off screen */
-    }
-    to {
-      left: 100vw; /* move completely across */
-    } */
