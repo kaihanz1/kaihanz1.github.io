@@ -86,15 +86,22 @@ div.smalltext {
 
 div.smalltext2 {
     font-size:24px;
-    line-height:30px;
+    line-height:28px;
+    font-family:'DiatypeLight'
+
+}
+
+div.footertext {
+    font-size:22px;
+    line-height:27px;
     font-family:'DiatypeLight'
 
 }
 
 div.extrasmalltext {
-    font-size:18px;
+    font-size:10px;
     line-height:21px;
-    font-family: 'DecimaMono';
+    font-family: 'DiatypeLight'
 }
 
 /* Font Styles */
@@ -117,8 +124,9 @@ div.fontitalic {
 
 div.navtitle1 {
     font-size:38px;
+    line-height: 41px;
     font-family:'Alti Regular';
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 div.navtitle1.active {
@@ -153,7 +161,8 @@ div.paddedtext {
 }
 
 div.textindent {
-    text-indent: 180px;
+    text-indent: 56px;
+    display: block;
 }
 
 div.grey {
@@ -259,7 +268,11 @@ div.padtopauto{
     padding-top:auto;
 }
 
-div.padleft
+div.padleft {
+    padding-left: 20px;
+}
+
+
 
 /* Widths */
 
@@ -330,20 +343,13 @@ div.overlay {
     position: relative;
 }
 
-div.caption {
-    position: absolute;
-    top:40px;
-    right:40px;
-    color:red;
-    background-color: blue;
-    font-size: 30px;
-}
 
 div.imgcaption {
     padding-top: 18px;
-    padding-bottom: 66px;
+    padding-bottom: 54px;
     font-size:18px;
-    font-family: 'ExcelsiorItalic'
+    line-height: 21px;
+    font-family: 'Excelsior'
 }
 
   div.zeroleft {
@@ -429,10 +435,6 @@ div.imgcaption {
     animation: pulse 6s infinite;
   }
 
-  .invert-image {
-    filter: invert(1);
-  }
-
   @keyframes pulse {
     0%, 100% {
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
@@ -442,7 +444,8 @@ div.imgcaption {
     }
   }
 
-  .image-fade-wrapper {
+
+.image-fade-wrapper {
     position: relative;
     width: 100%;
     height: auto;
@@ -516,8 +519,8 @@ div.herovideo video {
     flex-wrap: wrap;
   }
 
-  div.highlight.active {
-    background-color: burlywood;
+  div.highlight {
+    color: rgb(234, 51, 35)
   }
 
   div.popup {
@@ -538,23 +541,16 @@ div.herovideo video {
 
   /* moving element */
 
-  .moving-element {
+    /* .moving-element {
     position: fixed;
     top: 0;
-    left: -36px;
-    width:36px;
-    height: 200vh;
+    background: linear-gradient(90deg, transparent, red);
+    left: -44px;
+    width:44px;
+    height: 100vh;
     pointer-events: none;
     z-index: 800;
     transform: translateX(0);
-    transition: transform 8s ease;
+    transition: transform 18s ease;
     overflow: hidden;
-    margin-bottom: auto;
-  }
-  
-  .moving-element img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  } */
