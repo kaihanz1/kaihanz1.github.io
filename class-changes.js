@@ -1,58 +1,57 @@
 const classChanges = [
-  { time: 6, target: ".navtitle1", add: "active" },
-  { time: 7, target: ".navtitle1", remove: "active" },
-  { time: 9, target: ".changeme", remove: "show" },
-  { time: 9, target: ".changeme", add: "hidden" },
+
+// TELEPROMPTER BLINKS 
+
+{ time: 34, target: "#blink1", add: "show" },
+{ time: 97, target: "#blink1", remove: "show" },
+
+{ time: 98, target: "#revblink2", add: "show" },
+{ time: 164, target: "#revblink2", remove: "show" },
+
+{ time: 164, target: "#revblink3", add: "show" },
+{ time: 185, target: "#revblink3", remove: "show" },
+
+{ time: 211, target: "#revblink5", add: "show" },
+{ time: 248, target: "#revblink5", remove: "show" },
+
+{ time: 249, target: "#blink6", add: "show" },
+{ time: 267, target: "#blink6", remove: "show" },
+
+{ time: 267, target: "#revblink7", add: "show" },
+{ time: 288, target: "#revblink7", remove: "show" },
+
+{ time: 288, target: "#blink8", add: "show" },
+{ time: 331, target: "#blink8", remove: "show" },
+
+{ time: 331, target: "#revblink9", add: "show" },
+{ time: 341, target: "#revblink9", remove: "show" },
+
+{ time: 341, target: "#blink10", add: "show" },
+{ time: 373, target: "#blink10", remove: "show" },
+
+{ time: 371, target: "#blink11", add: "show" },
+{ time: 401, target: "#blink11", remove: "show" },
+
+{ time: 401, target: "#revblink12", add: "show" },
+{ time: 426, target: "#revblink12", remove: "show" },
+
+{ time: 426, target: "#revblink13", add: "show" },
+{ time: 465, target: "#revblink13", remove: "show" },
 
 
-// SCRIPT HIGHLIGHTS 
+// VIDEO EXPAND 
 
-  { time: 34, target: ".p1", add: "highlight" },
-  { time: 97, target: ".p1", remove: "highlight" },
-
-  { time: 98, target: ".p2", add: "highlight" },
-  { time: 164, target: ".p2", remove: "highlight" },
-
-  { time: 164, target: ".p3", add: "highlight" },
-  { time: 185, target: ".p3", remove: "highlight" },
-
-  { time: 186, target: ".p4", add: "highlight" },
-  { time: 210, target: ".p4", remove: "highlight" },
-
-  { time: 211, target: ".p5", add: "highlight" },
-  { time: 248, target: ".p5", remove: "highlight" },
-
-  { time: 249, target: ".p6", add: "highlight" },
-  { time: 267, target: ".p6", remove: "highlight" },
-
-  { time: 267, target: ".p7", add: "highlight" },
-  { time: 288, target: ".p7", remove: "highlight" },
-
-  { time: 288, target: ".p8", add: "highlight" },
-  { time: 331, target: ".p8", remove: "highlight" },
-
-  { time: 331, target: ".p9", add: "highlight" },
-  { time: 341, target: ".p9", remove: "highlight" },
-
-  { time: 341, target: ".p10", add: "highlight" },
-  { time: 373, target: ".p10", remove: "highlight" },
-
-  { time: 374, target: ".p11", add: "highlight" },
-  { time: 401, target: ".p11", remove: "highlight" },
-
-  { time: 401, target: ".p12", add: "highlight" },
-  { time: 426, target: ".p12", remove: "highlight" },
-
-  { time: 426, target: ".p13", add: "highlight" },
-  { time: 465, target: ".p13", remove: "highlight" },
+{ time: 186, target: ".herovideo", add: "active" },
+{ time: 211, target: ".herovideo", remove: "active" },
 
 
+// 'ON OR OFF, 1 OR 0'
 
-  // { time: 99, target: ".p5", add: "highlight" },
-  // { time: 163, target: ".p5", remove: "highlight" },
+{ time: 265, target: ".p6", add: "highlight" },
+{ time: 265.6, target: ".p6", remove: "highlight" },
 
-  // { time: 164, target: ".p6", add: "highlight" },
-  // { time: 184, target: ".p6", remove: "highlight" },
+
+  // MISC/UNKNOWN 
 
   { time: 185, target: ".pop1", add: "active" },
   { time: 5, target: ".pop1", add: "remove" },
@@ -64,6 +63,8 @@ const classChanges = [
   { time: 16, target: ".changeme3", add: "show" },
   { time: 28, target: ".changeme3", remove: "show" },
   { time: 28, target: ".changeme3", add: "hidden" }
+
+
 ];
 
 
