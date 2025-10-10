@@ -1,0 +1,442 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+/* Font Library */ 
+
+@font-face {
+    font-family: 'BauReg';
+    src: url(fonts/BauReg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SainteColombe';
+    src: url(fonts/SainteColombeReg.woff2) format('woff2');
+}
+
+div.swatch {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+div.bg-blue {
+    background-color: blue;
+}
+
+div.bg-green {
+    background-color: darkgreen;
+}
+
+div.bg-pink {
+    background-color: darkorchid;
+}
+
+/* Font Sizes */ 
+
+div.imgheader1 {
+    width:55vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 5vh;
+}
+
+div.imgheader2 {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.headerbox {
+    box-sizing: border-box;
+    padding-top: 40px;
+    height: 100vh;
+    width: 825px;
+    border: 1px solid blueviolet;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    /* column-gap: 20px; */
+}
+
+
+div.h1 {
+    font-size: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: blue;
+}
+
+div.h2 {
+    font-size:54px;
+    font-family: 'SainteColombe';
+    color: rgb(0, 0, 0);
+}
+
+div.p {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    font-family: BauReg;
+}
+
+div.q {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+header.title {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1.title {
+    font-size: 70px;
+    color: darkgoldenrod;
+}
+
+div.subheader {
+    font-size: 50px;
+    color: brown;
+}
+
+div.quote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+div.body {
+    font-family: BauReg;
+    font-size: 28px;
+    line-height: 32px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+div.body2 {
+    font-family: BauReg;
+    font-size: 70px;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    line-height: 77px;
+    margin-left: 150px;
+    width: 100%;
+}
+
+div.headsmall {
+    font-family: BauReg;
+    font-size: 14px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    line-height: 13px;
+    margin-left: 90px;
+}
+
+div.headsmaz {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.40rem;
+    line-height: 0.5em;
+    padding-bottom: 0.631em;
+}
+
+div.bodysmall {
+    font-family: BauReg;
+    font-size: 0.31rem;
+    line-height: 0.45rem;
+}
+
+
+div.largetext {
+    font-family: BauReg;
+    font-size: 100px;
+    line-height: 110px;
+}
+
+div.footnote {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Margins */
+
+div.ml {
+    margin-left: 3.5vh;
+}
+
+div.mlauto {
+    margin-left: auto;
+}
+
+div.mt {
+    margin-top: 1.25vh;
+}
+
+div.mtmed {
+    margin-top: 3%;
+}
+
+div.mtl {
+    margin-top: 30vh;
+}
+
+/* Paragraph Styles */
+
+div.listnumber {
+margin-right: 50px;
+}
+
+div.listlabel {
+display: block;
+}
+
+div.listitem {
+    display: flex;
+    align-items: baseline;
+  }
+
+/* Style Guide Elements */ 
+
+@font-face {
+    font-family: 'DiatypeBold';
+    src: url(fonts/DiatypeBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'DiatypeMed';
+    src: url(fonts/DiatypeMed.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'DiatypeReg';
+    src: url(fonts/DiatypeReg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'DiatypeLight';
+    src: url(fonts/DiatypeLight.woff) format('woff');
+}
+
+div.sgline {
+    border-top: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    margin-top: 20vh;
+}
+
+div.sglh {
+    font-family: 'DiatypeBold';
+    font-size: 4.875rem;
+    line-height: 1.1em;
+    display: inline-block;
+    position: relative;
+}
+
+
+div.sgh1 {
+    color: black;
+    font-family: 'DiatypeBold';
+    font-size: 2.375rem;
+    margin-bottom: 1.5%;
+    margin-top: 0.5%;
+    display: inline-block;
+    justify-content: space-evenly
+    
+}
+
+div.sgh1reg {
+    color: black;
+    font-family: 'DiatypeReg';
+    font-size: 2.375rem;
+    margin-bottom: 1.5%;
+    margin-top: 0.5%;
+    display: inline-block;
+    justify-content: space-evenly
+    
+}
+
+div.sgh2 {
+    color: black;
+    font-family: 'DiatypeReg';
+    font-size: 1.3rem;
+    word-spacing: 1.3rem;
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
+    margin-bottom: 3vh;
+}
+
+div.sgh3 {
+    color: rgb(189, 189, 189);
+    font-family: 'DiatypeLight';
+    font-size: 1.125rem;
+    line-height: 1.8vh;
+    margin-left: 1.5%;
+}
+
+div.sgh4 {
+    color: rgb(189, 189, 189);
+    font-family: 'DiatypeReg';
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin-left: 1.5%;
+    margin-bottom: 20px;
+}
+
+div.sgcontainer {
+    display: flex;
+    margin-top: 1.25vh;
+    column-gap: auto;
+    justify-content: space-between;
+    margin-right: 1.25vw;
+    margin-left: 1.25vw;
+    margin-bottom: 1.5vh;
+}
+
+div.sgcontainer2 {
+    display: flex;
+}
+
+.dot {
+    height: 2.5vh;
+    width: 2.5vh;
+    background-color: black;
+    border-radius: 50%;
+}
+
+div.dotline {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+div.sgcontainercover {
+    height: 100vh;
+    padding-left: 1.5vw;
+    padding-top: 1.25vh;
+    display: flex;
+}
+
+
+/* Text Alignment */
+
+div.textcenter {
+    text-align: center;
+}
+    
+div.textright {
+    text-align: right;
+}
+
+div.textleft {
+    text-align: left;
+}
+
+div.textindent {
+    text-indent: 20px;
+    display: block;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between; 
+    gap: 5vw; 
+}
+
+
+div.paddedtext {
+    padding:20px;
+    display:inline-block;
+    background-color: rgb(0, 136, 255);
+ }
+
+
+
+
+
+div.pad30 {
+    padding-top: 1.2rem;
+}
+
+div.padrightsmall {
+    padding-right: 1.5vw;
+}
+
+
+
+div.box {
+    font-size: 4.375rem;
+    width: 600px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+
+div.box1 {
+    font-size: 70px;
+    width: 600px;
+    border: 4px dotted blue;
+    padding: 30px;
+}
+
+div.centerbox {
+    font-size: 36px;
+    width: 800px;
+    border: 1px solid red;
+    margin-left: auto;
+}
+
+div.container {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+div.vinylcontainer {
+    display: flex;
+    column-gap: 9.524vw;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+div.siblingbox1 {
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+div.siblingbox2 {
+    width: 50%;
+    /* border: 1px solid rgb(98, 255, 0); */
+}
+
+div.boxe1 {
+    box-sizing: border-box;
+    padding-top: 2.5rem;
+    height: 37vw;
+    width: 37vw;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    /* column-gap: 20px; */
+}
+
+div.boxe2 {
+    height: 37vw;
+    width: 37vw;
+    background-color: rgb(145, 228, 201);
+}
+
+img {
+    width:100%;
+}
+
+
