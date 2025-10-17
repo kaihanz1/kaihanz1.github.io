@@ -1,9 +1,13 @@
 body{
     background-color: rgb(255, 255, 255);
-    margin: 0px;
 }
 
 /* Font Library */ 
+
+@font-face {
+    font-family: 'NouveauSans';
+    src: url(fonts/NouveauSans.woff) format('woff2');
+}
 
 @font-face {
     font-family: 'BauReg';
@@ -15,98 +19,86 @@ body{
     src: url(fonts/SainteColombeReg.woff2) format('woff2');
 }
 
+/* Swatches */ 
+
 div.swatch {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-    border: 1px solid black;
+    width: 48.75vw;
+    height: 10vh;
 }
 
-div.bg-blue {
-    background-color: blue;
+div.bg-grey {
+    background-color: #e3e4e5
 }
 
-div.bg-green {
-    background-color: darkgreen;
+div.bg-grey2 {
+    background-color: #e3e4e5
 }
 
-div.bg-pink {
-    background-color: darkorchid;
+div.bg-slate {
+    background-color: #bfcad6
+}
+
+
+div.bg-blugray {
+    background-color: #5c85a6;
+}
+
+div.bg-mint {
+    background-color: #c2f9ca;
+}
+
+div.bg-lightblue {
+    background-color: #b8fbff;
+}
+
+div.bg-purple {
+    background-color: #ab8ef8;
+}
+
+div.bg-yellow {
+    background-color: yellow;
 }
 
 /* Font Sizes */ 
 
-div.imgheader1 {
-    width:55vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    margin-top: 5vh;
-}
-
-div.imgheader2 {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.headerbox {
-    box-sizing: border-box;
-    padding-top: 40px;
-    height: 100vh;
-    width: 825px;
-    border: 1px solid blueviolet;
-    background-color: rgb(242, 242, 242);
-    display: flex;
-    /* column-gap: 20px; */
-}
-
 
 div.h1 {
-    font-size: 290px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: blue;
+    font-size: 16.25rem;
+    font-family: 'NouveauSans';
+    color: black;
 }
 
 div.h2 {
-    font-size:54px;
-    font-family: 'SainteColombe';
+    font-size: 8rem;
+    font-family: 'NouveauSans';
+    color: rgb(0, 0, 0);
+}
+
+div.h3 {
+    font-size: 5rem;
+    font-family: 'Baureg';
     color: rgb(0, 0, 0);
 }
 
 div.p {
-    font-size: 3.8rem;
-    line-height: 4.8rem;
-    font-family: BauReg;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    font-family: 'BauReg';
+    margin-left: 16.741vw;
 }
 
-div.q {
+div.figcaption {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-header.title {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-h1.title {
-    font-size: 70px;
-    color: darkgoldenrod;
-}
-
-div.subheader {
-    font-size: 50px;
-    color: brown;
-}
-
-div.quote {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    font-weight: bold;
+div.imgcaption {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.0vw;
+    line-height: 1.1vw;
+    font-size: 0.8vw;
+    font-family: 'DiatypeLight'
 }
 
 div.body {
@@ -118,15 +110,6 @@ div.body {
     margin-right: 50px;
 }
 
-div.body2 {
-    font-family: BauReg;
-    font-size: 70px;
-    margin-top: 500px;
-    margin-bottom: 500px;
-    line-height: 77px;
-    margin-left: 150px;
-    width: 100%;
-}
 
 div.headsmall {
     font-family: BauReg;
@@ -151,41 +134,69 @@ div.bodysmall {
     line-height: 0.45rem;
 }
 
-
-div.largetext {
-    font-family: BauReg;
-    font-size: 100px;
-    line-height: 110px;
+.rotated-text {
+    display: inline-block; 
+    transform: rotate(-90deg);
 }
 
-div.footnote {
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+.rotated-textsmall {
+    display: flexbox; 
+    transform: rotate(-90deg);
 }
-
 
 /* Margins */
 
 div.ml {
+    margin-left: 1.75vh;
+}
+
+div.mlsmall {
     margin-left: 3.5vh;
+}
+
+div.mlmed {
+    margin-left: 7vh;
+}
+
+div.mr {
+    margin-right: 1.75vh;
 }
 
 div.mlauto {
     margin-left: auto;
 }
 
+div.mrauto {
+    margin-right: auto;
+}
+
 div.mt {
-    margin-top: 1.25vh;
+    margin-top: 1.75vh;
+}
+
+div.mtsmall {
+    margin-top: 3.5vh;
+
 }
 
 div.mtmed {
-    margin-top: 3%;
+    margin-top: 8vh;
+}
+
+div.mtmore {
+    margin-top: 16vh;
 }
 
 div.mtl {
     margin-top: 30vh;
+}
+
+div.mbauto {
+    margin-bottom: auto;
+}
+
+div.mb {
+    margin-bottom: 1.75vh;
 }
 
 /* Paragraph Styles */
@@ -229,11 +240,16 @@ div.sgline {
     border-top: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    width: 97%;
-    margin-top: 20vh;
+    width: 98%;
 }
 
-div.sglh {
+div.sgp {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    font-family: 'BauReg';
+}
+
+div.sgh1 {
     font-family: 'DiatypeBold';
     font-size: 4.875rem;
     line-height: 1.1em;
@@ -241,68 +257,35 @@ div.sglh {
     position: relative;
 }
 
-
-div.sgh1 {
-    color: black;
-    font-family: 'DiatypeBold';
-    font-size: 2.375rem;
-    margin-bottom: 1.5%;
-    margin-top: 0.5%;
-    display: inline-block;
-    justify-content: space-evenly
-    
-}
-
-div.sgh1reg {
-    color: black;
-    font-family: 'DiatypeReg';
-    font-size: 2.375rem;
-    margin-bottom: 1.5%;
-    margin-top: 0.5%;
-    display: inline-block;
-    justify-content: space-evenly
-    
-}
-
 div.sgh2 {
     color: black;
-    font-family: 'DiatypeReg';
-    font-size: 1.3rem;
-    word-spacing: 1.3rem;
-    margin-top: 1.5vh;
-    margin-left: 1.5vw;
-    margin-bottom: 3vh;
+    font-family: 'DiatypeMed';
+    font-size: 1.75rem;
+    word-spacing: 1.75rem;
+    margin-top: 1.75vh;
+    margin-bottom: 5.25vh;
 }
 
 div.sgh3 {
-    color: rgb(189, 189, 189);
-    font-family: 'DiatypeLight';
-    font-size: 1.125rem;
-    line-height: 1.8vh;
-    margin-left: 1.5%;
+    color: black;
+    font-family: 'DiatypeBold';
+    font-size: 2rem;
+    padding-left: 5.25vh;
 }
 
 div.sgh4 {
-    color: rgb(189, 189, 189);
+    color: black;
     font-family: 'DiatypeReg';
-    font-size: 1.5rem;
-    line-height: 20px;
-    margin-left: 1.5%;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-top: 1.75vh;
+    padding-left: 5.25vh;
 }
 
-div.sgcontainer {
-    display: flex;
-    margin-top: 1.25vh;
-    column-gap: auto;
-    justify-content: space-between;
-    margin-right: 1.25vw;
-    margin-left: 1.25vw;
-    margin-bottom: 1.5vh;
-}
-
-div.sgcontainer2 {
-    display: flex;
+div.sgh5 {
+    color: black;
+    font-family: 'DiatypeMed';
+    font-size: 3.0rem;
 }
 
 .dot {
@@ -313,16 +296,18 @@ div.sgcontainer2 {
 }
 
 div.dotline {
-    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2vh;
+    justify-content: space-between;
+    height: 60vh;
+    margin-top: 10vh;
 }
 
 div.sgcontainercover {
     height: 100vh;
-    padding-left: 1.5vw;
-    padding-top: 1.25vh;
+    padding-left: 1.75vw;
+    padding-right: 1.75vw;
+    padding-top: 1.75vw;
     display: flex;
 }
 
@@ -352,17 +337,6 @@ div.textindent {
     gap: 5vw; 
 }
 
-
-div.paddedtext {
-    padding:20px;
-    display:inline-block;
-    background-color: rgb(0, 136, 255);
- }
-
-
-
-
-
 div.pad30 {
     padding-top: 1.2rem;
 }
@@ -371,7 +345,19 @@ div.padrightsmall {
     padding-right: 1.5vw;
 }
 
+div.padbottom {
+    padding-bottom: 1.75vh;
+}
 
+div.padtop {
+    padding-top: 5.5vh;
+}
+
+div.padaround {
+    box-sizing: border-box;
+    padding-left: 0.75vw;
+    padding-top: 0.75vh;
+}
 
 div.box {
     font-size: 4.375rem;
@@ -380,25 +366,46 @@ div.box {
     padding-top: 30px;
 }
 
-div.box1 {
-    font-size: 70px;
-    width: 600px;
-    border: 4px dotted blue;
-    padding: 30px;
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .imgcontainer img {
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-width: 45vh;
+}
+  
+div.center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    
 }
 
-div.centerbox {
-    font-size: 36px;
-    width: 800px;
-    border: 1px solid red;
-    margin-left: auto;
+div.container25 {
+    width: 25vw;
 }
 
-div.container {
-    position: relative;
-    display:flex;
+div.container75 {
+    width: 75vw;
+}
+
+div.containerflex {
+    display: flex;
+}
+
+div.containerswatch {
+    display: flex;
     flex-direction: column;
 }
+
 
 div.vinylcontainer {
     display: flex;
@@ -436,7 +443,152 @@ div.boxe2 {
 }
 
 img {
-    width:100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
+.img-truesize {
+    max-width: none;
+    width: auto;
+    height: auto;
+}
+
+.img-100 {
+    width: 100%;  
+    height: auto; 
+}
+
+.img-80 {
+    width: 80%;  
+    height: auto; 
+}
+
+.img-75 {
+    width: 75%;  
+    height: auto; 
+}
+
+.img-60 {
+    width: 75%;  
+    height: auto; 
+}
+
+.img-50 {
+    width: 50%;  
+    height: auto; 
+}
+
+.img-40 {
+    width: 40%;  
+    height: auto; 
+}
+
+.img-30 {
+    width: 30%;  
+    height: auto; 
+}
+  
+.img-25 {
+    width: 25%;  
+    height: auto; 
+}
+  
+.img-20 {
+    width: 20%;  
+    height: auto; 
+}
+
+.img-15 {
+    width: 15%;  
+    height: auto; 
+}
+
+.img-10 {
+    width: 10%;  
+    height: auto; 
+}
+
+.bordercheck {
+    border: 1px solid black;
+}
+
+
+div.multiplyyellow {
+    mix-blend-mode: multiply;
+    background-color: rgb(229, 255, 0);
+    width: 5vw;
+    height: 20vw;
+    margin:0 auto;
+    display: block;
+
+    position: sticky;
+    top: 0;   
+    left: 0;  
+    z-index: 10;
+    
+}
+
+div.multiplyiceblue {
+    font-family: 'BauReg';
+    mix-blend-mode: multiply;
+    background-color: rgb(15, 251, 220);
+    width: 1.75vw;
+    margin-left: 1vw;
+    height: 20vw;
+    display: block;
+
+    position: sticky;
+    top: 0;   
+    left: 0;  
+    z-index: 10;
+}
+
+
+/* Blur Blink Effect */
+
+.space{
+    display: inline-block;
+    width: 20px;
+  }
+  .powdercontainer{
+    border-radius: 30px 30px;
+    width: 100%;
+    text-align: left;
+}
+  
+  
+.powdertitle{
+    display: inline;
+    font-size: 4.5rem;
+
+    font-family: 'BauReg';
+    color:rgb(0, 0, 0);
+    animation: blur-anime 4s ease-in-out infinite;
+  }
+
+  :root {
+    --d: 0.1s;
+  }
+  .delay1{animation-delay: 0.2s;}
+  .delay2{animation-delay: 0.4s;}
+  .delay3{animation-delay: 0.6s;}
+  .delay4{animation-delay: 0.8s;}
+  .delay5{animation-delay: 1.0s;}
+  .delay6{animation-delay: 1.2s;}
+  .delay7{animation-delay: 1.4s;}
+  .delay8{animation-delay: 1.6s;}
+  .delay9{animation-delay: 1.8s;}
+  .delay0{animation-delay: 0.0s;}
+  
+  
+  
+  @keyframes blur-anime {
+    0%  {filter: blur(0px);color:rgb(0, 0, 0);}
+    30%  {filter: blur(15px);color:#ab8ef8;}
+    45%  {filter: blur(15px);color:#c2f9ca;}
+    90%  {filter: blur(0px);color:rgb(0, 0, 0);}
+    100%  {filter: blur(0px);color:rgb(0, 0, 0);}
+  }
+  
