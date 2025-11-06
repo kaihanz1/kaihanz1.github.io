@@ -1,0 +1,1046 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+div.bg-bluegradient {
+    background-image: linear-gradient(#ffffff 2%, #b8fbff 50%);   
+}
+
+div.bg-blue {
+    background-color: #b8fbff;
+}
+
+div.bg-yellow {
+    background-color: #ffff69;
+}
+
+div.bg-green {
+    background-color: #c2f9ca;
+}
+
+div.bg-black {
+    background-color: #000000;
+}
+
+html { scroll-behavior: smooth; 
+}
+
+/* Font Library */ 
+
+@font-face {
+    font-family: 'NouveauSans';
+    src: url(fonts/NouveauSans.woff) format('woff2');
+}
+
+@font-face {
+    font-family: 'BauReg';
+    src: url(fonts/BauReg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'BauMed';
+    src: url(fonts/NouveauSans.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SainteColombeLight';
+    src: url(fonts/SainteColombeLight.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SainteColombeReg';
+    src: url(fonts/SainteColombeReg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SainteColombeMed';
+    src: url(fonts/SainteColombeMed.woff) format('woff');
+}
+
+/* Font Sizes */ 
+
+div.h1 {
+    font-size: 16.25rem;
+    font-family: 'NouveauSans';
+    color: rgb(255, 255, 255);
+}
+
+div.h1outline {
+    font-size: 16.25rem;
+    font-family: 'NouveauSans';
+    color:#ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); 
+}
+
+div.h1white {
+    font-size: 16.25rem;
+    font-family: 'NouveauSans';
+    color:#ffffff;
+}
+
+div.h2 {
+    font-size: 7rem;
+    line-height: 7rem;
+    font-family: 'BauReg';
+}
+
+div.h3 {
+    font-size: 9rem;
+    font-family: 'BauReg';
+}
+
+
+div.p {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-family: 'BauReg';
+}
+
+div.p2 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-family: 'BauReg';
+    color: #ffffff;
+}
+
+div.p3 {
+    font-family: 'BauReg';
+    color: #000000;
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+div.p3essay {
+    font-family: 'BauReg';
+    font-size: 1.35rem;
+    line-height: 1.55rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
+}
+
+div.p4 {
+    font-family: 'BauReg';
+    font-size: 2.375rem;
+    line-height: 2.5rem;
+}
+
+div.p5 {
+    font-family: 'BauReg';
+    font-size: 1.25rem;
+}
+
+div.p6 {
+    font-family: 'SainteColombeReg';
+    font-size: 1rem;
+    position: sticky;
+    top: 10px;
+}
+
+div.sectionimg {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    padding-right: 1.75rem;
+    width: 20vw;
+    mix-blend-mode: darken;
+}
+
+div.sectioncontainerA {
+    display: flex;
+    height: 100vh;
+    background-image: url("images/background1.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+div.sectioncontainerB {
+    display: flex;
+    height: 100vh;
+    background-image: url("images/background2.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+div.sectioncontainerC {
+    display: flex;
+    height: 100vh;
+    background-image: url("images/background3.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.sectioncontainerD {
+    display: flex;
+    height: 100vh;
+    background-image: url("images/background4.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.sectioncontainer2 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sectionh2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 11rem;
+    line-height: 11rem;
+    font-family: 'BauReg';
+}
+
+.sectionh3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 11rem;
+    line-height: 11rem;
+    font-family: 'BauReg';
+}
+
+.sectionh3 .line {
+  display: flex; 
+  justify-content: center;
+}
+
+
+.silver-text {
+    background: linear-gradient(
+        38deg,
+        #f0f0f0 0%,
+        #7d7d7d 15%,
+        #d6d6d6 30%,
+        #a1a1a1 45%,
+        #ffffff 60%,
+        #8c8c8c 75%,
+        #cfcfcf 100%
+    );
+    background: -webkit-linear-gradient(
+        38deg,
+        #f0f0f0 0%,
+        #7d7d7d 15%,
+        #d6d6d6 30%,
+        #a1a1a1 45%,
+        #ffffff 60%,
+        #8c8c8c 75%,
+        #cfcfcf 100%
+    );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+div.sectionsubhead {
+    font-family: 'SainteColombeReg';
+    font-size: 2rem;
+    position: absolute;
+    padding-left: 11.5rem;
+    padding-top: 8rem;
+}
+
+div.textabsolute {
+    font-family: 'BauReg';
+    font-size: 1rem;
+    line-height: 1.25rem;
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding-bottom: 50vh;
+    bottom: 0;
+}
+
+div.sectionimgcaption {
+    position: absolute;
+    padding-top: 40%;
+    font-family: 'SainteColombeLight';
+    font-size: 7rem;
+}
+
+div.rotatedtext {
+    position: absolute;
+    padding-top: 24%;
+    padding-left: 1%;
+    left: 0;
+    width: 0.75%;
+}
+
+div.rotatedtext2 {
+    position: absolute;
+    padding-top: 28%;
+    padding-right: 1%;
+    right: 0;
+    width: 1.5%;
+}
+
+/* Text Position*/ 
+
+div.h1flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.h2flex {
+    display: flex;
+    padding-left: 11rem;
+    padding-top: 10rem; 
+}
+
+div.pflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.detailflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Text Align */ 
+
+div.textcenter {
+    text-align: center;
+}
+    
+div.textright {
+    text-align: right;
+}
+
+div.textleft {
+    text-align: left;
+}
+
+/* Widths */
+
+div.width100 {
+    width:100%;
+}
+
+div.width95 {
+    width:95%;
+}
+
+div.width90 {
+    width:90%;
+}
+
+div.width80 {
+    width:80%;
+}
+
+div.width75 {
+    width:75%;
+}
+
+div.width60 {
+    width:60%;
+}
+
+div.width50 {
+    width:50%;
+}
+
+div.width33 {
+    width: 33%;
+}
+
+div.width25 {
+    width:25%;
+}
+
+div.width20 {
+    width:20%;
+}
+
+div.width15 {
+    width:15%;
+}
+
+div.width10 {
+  width:10%;
+}
+
+/* Heights */
+
+div.height50 {
+    height:50vh;
+}
+
+div.height100 {
+    height:100vh;
+}
+
+/* Margins */
+
+
+div.mlauto {
+    margin-left: auto;
+}
+
+div.ml {
+    margin-left: 1.75vh;
+}
+
+div.mlsmall {
+    margin-left: 3.5vh;
+}
+
+div.mlmed {
+    margin-left: 7vh;
+}
+
+div.mr {
+    margin-right: 1.75vh;
+}
+
+div.mrauto {
+    margin-right: auto;
+}
+
+div.mt {
+    margin-top: 1.75vh;
+}
+
+div.mtsmall {
+    margin-top: 3.5vh;
+
+}
+
+div.mtmed {
+    margin-top: 8vh;
+}
+
+div.mtlarge {
+    margin-top: 16vh;
+}
+
+div.mtxlarge {
+    margin-top: 30vh;
+}
+
+div.mbauto {
+    margin-bottom: auto;
+}
+
+div.mb {
+    margin-bottom: 1.75vh;
+}
+
+
+/* CUTOUT EFFECT */
+
+cutoutbody {
+    padding: 0;
+    margin: 0;
+  }
+  
+  cutoutimg {
+    width: 80%;
+  }
+  
+  div.cutout {
+    height: 95vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("images/cutout1.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+  }
+
+  div.cutout2 {
+    height: 95vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("images/nightcutout2@2x.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+  }
+
+  div.coverpage {
+    height: 100vh;
+    display:flex;
+    background-image: url("images/backgroundreflected.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+  }
+
+  
+  div.cutouttitle {
+    color:rgb(0, 0, 0);
+    font-size: 5rem;
+    line-height: 6rem;
+    font-family: 'BauReg';
+    text-align: center;
+  }
+  
+  div.cutoutoverlay {
+    width:12.5rem;
+    position:absolute;
+    left:33.5rem;
+    top:28rem;
+  }
+  
+  div.cutoutoverlay2 {
+    width:22rem;
+    position:absolute;
+    left:71rem;
+    top:40rem;
+  }
+
+  div.cutoutbodytext {
+    font-size:40px;
+}
+
+
+/* MARQUEE TEXT EFFECT FAIL */
+
+/* .marquee {
+    position: relative;
+    width: 80vw;
+    max-width: 100%;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 3s linear infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-20%); }
+} */
+
+
+/* VINYL SET */
+
+div.hvinyl {
+    font-family: SainteColombeMed;
+    font-size: 0.7rem;
+    padding-bottom: 0.7em;
+}
+
+div.pvinyl {
+    font-family: BauReg;
+    font-size: 0.565rem;
+    line-height: 0.665rem;
+}
+
+div.pvinylsmall {
+    font-family: BauReg;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+}
+
+div.ptvinyl {
+    padding-top: 1.5rem;
+}
+
+div.ptvinyl2 {
+    padding-top: 3rem;
+}
+
+
+div.vinylcontainer {
+    display: flex;
+    column-gap: 9.524vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.vinylsleeve1 {
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+    width: 50%;
+}
+
+div.vinylsleeve2 {
+    width: 50%;
+}
+
+div.vinylcontainer1 {
+    box-sizing: border-box;
+    padding-top: 2.5rem;
+    height: 37vw;
+    width: 37vw;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+div.vinylcontainer2 {
+    height: 37vw;
+    width: 37vw;
+    background-color: rgb(145, 228, 201);
+}
+
+/* CREDITS 2 */
+
+div.bhvinyl {
+    font-family: 'NouveauSans';
+    font-size: 2.5rem;
+    padding-bottom: 1em;
+}
+
+div.bptvinyl {
+    padding-top: 0.5rem;
+}
+
+div.bpvinylsmall {
+    font-family: BauReg;
+}
+
+div.blistnumber {
+    margin-right: 2em;
+    }
+    
+div.blistlabel {
+    display: block;
+    }
+    
+div.blistitem {
+    display: flex;
+    align-items: baseline;
+}
+
+/* IMG */
+
+img {
+    width: 100%;
+}
+
+/* Splash screen */
+
+.welcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: none;
+    justify-content: center;
+    z-index: 1002;
+    cursor: pointer;
+  }
+  
+  .welcome.visible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* SPINNING STICKER */
+
+
+div.vinylspin {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.spin {
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+}
+
+/* Page Number */
+
+  .page-number {
+    position: fixed;
+    display: none;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.25rem;
+    font-family: 'SainteColombeReg';
+    z-index: 998;
+  }  
+  
+  .show-page-numbers {
+    display: block;
+}
+
+
+/* Left Sticky Label */
+
+.left-label {
+    position: fixed;
+    display: none;
+    top: 1.5%;
+    left: 1.25%;
+    transform: translateX(-5%);
+    font-size: 2.75rem;
+    font-family: 'BauReg';
+    z-index: 998;
+
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+  }  
+  
+
+
+.show-left-label {
+    opacity: 1;
+  }
+  
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  
+  .show-left-label {
+    display: block;
+}
+
+/* Right Sticky Label */
+
+.right-label {
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    transform: translateY(-5%);
+    z-index: 998;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+  
+  .right-label.visible {
+    opacity: 1; 
+  }
+  
+  .right-label img {
+    width: 10vw; 
+    height: auto;
+}
+
+.indicator-dot {
+    position: absolute;
+    bottom: -13px; 
+    left: -7px;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform 0.1s linear;
+}
+
+
+/* Paragraph Styles */
+
+div.listnumber {
+    margin-right: 2em;
+    }
+    
+div.listlabel {
+    display: block;
+    }
+    
+div.listitem {
+    display: flex;
+    align-items: baseline;
+}
+
+
+/* Image Positions */
+
+overlayimg {
+    width: 80%;
+}
+  
+div.imgtextcontainer {
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+  
+div.imgoverlaytitle {
+    color:rgb(0, 0, 0);
+    font-size: 5rem;
+    line-height: 6rem;
+    font-family: 'BauReg';
+}
+  
+div.imgoverlaytitlewhite {
+    color:rgb(255, 255, 255);
+    font-family: 'BauReg';
+}
+
+div.imgoverlay1 {
+    width:60rem;
+    position:absolute;
+    align-items: center;
+    top:36rem;
+}
+  
+div.imgoverlay2 {
+    width:20rem;
+    position:absolute;
+    top:46rem;
+    right: 0;
+}
+
+div.imgoverlay2b {
+    width:30rem;
+    position:absolute;
+    top:25rem;
+    left: 0;
+}
+
+div.imgoverlay3 {
+    width:10rem;
+    position:absolute;
+    left:56.45rem;
+    top:29.5rem;
+}
+
+div.imgoverlay4 {
+    width:14.5rem;
+    position:absolute;
+    left:109.1rem;
+    top:36rem;
+}
+
+div.imgoverlay5 {
+    width:50rem;
+    position:absolute;
+    left:42rem;
+    top:72rem;
+}
+
+div.imgoverlay6 {
+    width:41rem;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:5rem;
+    z-index: -1;
+}
+
+div.imgoverlay6b {
+    width:22%;
+    right: 0;
+    left: 15%;
+    position:absolute;
+    top:45rem;
+}
+
+div.imgoverlay7 {
+    width:50rem;
+    position:absolute;
+    left:0;
+    top:1rem;
+}
+
+div.imgoverlay8 {
+    display: flex;
+    width:12%;
+    position:absolute;
+    justify-content: center;
+    top:18rem;
+}
+
+div.imgoverlay9 {
+    width:20%;
+    right: 0;
+    left: 65%;
+    position:absolute;
+    top:40rem;
+}
+
+div.imgoverlay10 {
+    width:22%;
+    right: 0;
+    left: 15%;
+    position:absolute;
+    top:45rem;
+}
+
+div.imgoverlay11 {
+    width:15%;
+    right: 0;
+    left: 25%;
+    position:absolute;
+    top:7rem;
+}
+
+div.imgoverlay12 {
+    width:65%;
+    right: 0;
+    padding-left: 30%;
+    position:absolute;
+    top:1rem;
+}
+
+div.imgoverlay13 {
+    width:40%;
+    left: 3%;
+    position:absolute;
+    top:36rem;
+}
+
+div.imgoverlay14 {
+    width:22rem;
+    position: absolute;
+    left: 22%;
+    top: 7rem;
+}
+
+
+div.imgoverlay15 {
+    width:25%;
+    position:absolute;
+    justify-content: center;
+    top:12rem;
+}
+
+div.imgoverlay16 {
+    right: 0;
+    padding-right: 37.25%;
+    width:30%;
+    position:absolute;
+    top:29rem;
+}
+
+div.imgoverlay17 {
+    width:18%;
+    left: 0;
+    padding-left: 18%;
+    position:absolute;
+    top:38rem;
+}
+
+
+div.imgoverlay18 {
+    width:5%;
+    position:absolute;
+    justify-content: center;
+    top:20rem;
+}
+
+
+div.imgbodytext {
+    font-size:40px;
+}
+
+/* Blur Blink Effect */
+
+.space{
+    display: inline-block;
+    width: 0.32em;
+}
+  .powdercontainer{
+    width: 100%;
+}
+  
+.powdertitle{
+    animation: blur-anime 2.5s ease-in-out infinite;
+  }
+
+  :root {
+    --d: 0.1s;
+  }
+  .delay1{animation-delay: 0.2s;}
+  .delay2{animation-delay: 0.3s;}
+  .delay3{animation-delay: 0.4s;}
+  .delay4{animation-delay: 0.5s;}
+  .delay5{animation-delay: 0.6s;}
+
+  
+  
+  
+  @keyframes blur-anime {
+    0%  {filter: blur(0px);color:black;}
+    10%  {filter: blur(0px);color:#C2F9CA;}
+    15%  {filter: blur(0px);color:#ffffff;}
+    20%  {filter: blur(0px);color:#c2f9ca;}
+    25%  {filter: blur(0px);color:#ffffff;}
+    30%  {filter: blur(0px);color:#C2F9CA;}
+    35%  {filter: blur(0px);color:#ffffff;}
+    40%  {filter: blur(0px);color:#C2F9CA;}
+    80%  {filter: blur(0px);color:black;}
+    100%  {filter: blur(0px);color:black;}
+}
+
+
+/* Audio Button */
+
+div.audioplayer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Paper Falling Effect */
+
+.paper {
+    position: absolute;
+    top: -100px;
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 0);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform-origin: center;
+    pointer-events: none; 
+    z-index: 10; 
+  }
+
+
+
